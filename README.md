@@ -14,11 +14,11 @@ The site helps pastors and ministry teams browse prompts by ministry area, add l
 - Clear reminders to remove sensitive pastoral and personal information
 - Responsive layouts for desktop, tablet, and mobile
 
-## Live site
+## Public website
 
-[pastor-prompt-library.royr.chatgpt.site](https://pastor-prompt-library.royr.chatgpt.site)
+[royr05.github.io/pastor-prompt-library](https://royr05.github.io/pastor-prompt-library/)
 
-The hosted site may remain access-restricted while it is under review.
+The site is published with GitHub Pages and is available without a ChatGPT account.
 
 ## Run locally
 
@@ -47,4 +47,4 @@ The site does not send church profiles or source material to a server. The churc
 
 ## Release status
 
-This project is currently in private review. Public access and licensing terms have not yet been finalized.
+The website is publicly available. Licensing terms for reuse have not yet been finalized.

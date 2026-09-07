@@ -1,5 +1,7 @@
 'use client';
 
+export const dynamic = 'force-static';
+
 import { useEffect, useMemo, useState } from 'react';
 import { BookOpen, Check, ChevronLeft, ChevronRight, Copy, Eye, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';

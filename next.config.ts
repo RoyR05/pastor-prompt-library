@@ -1,5 +1,11 @@
 import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {};
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
+const nextConfig: NextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  assetPrefix: isGitHubPages ? '/pastor-prompt-library' : '',
+};
 
 export default nextConfig;

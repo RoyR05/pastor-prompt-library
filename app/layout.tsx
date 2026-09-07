@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Source_Sans_3, Source_Serif_4 } from 'next/font/google';
 import './globals.css';
 
+export const dynamic = 'force-static';
+
 const sourceSans = Source_Sans_3({
   variable: '--font-source-sans',
   subsets: ['latin'],
