@@ -3,7 +3,7 @@
 export const dynamic = 'force-static';
 
 import { useEffect, useMemo, useState } from 'react';
-import { BookOpen, Check, ChevronLeft, ChevronRight, Copy, Eye, ShieldCheck } from 'lucide-react';
+import { BookOpen, Check, ChevronLeft, ChevronRight, Copy, Download, Eye, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
@@ -126,7 +126,13 @@ export default function Home() {
             <span>Pastor Prompt Library</span>
           </a>
           <p>Practical help for the weekly work of ministry</p>
-          <span className="edition">77 prompts · First edition</span>
+          <div className="masthead-actions">
+            <span className="edition">77 prompts · First edition</span>
+            <a className="pdf-link" href="./Pastor-Prompt-Library-77-Practical-AI-Prompts.pdf" download>
+              <Download aria-hidden="true" />
+              <span>Download PDF</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -233,6 +239,15 @@ export default function Home() {
           </div>
         </aside>
       </div>
+
+      <footer className="site-footer">
+        <div className="site-footer-inner">
+          <p>Pastor Prompt Library · 77 practical prompts for ministry</p>
+          <a href="./Pastor-Prompt-Library-77-Practical-AI-Prompts.pdf" download>
+            <Download aria-hidden="true" /> Download the PDF edition
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }
